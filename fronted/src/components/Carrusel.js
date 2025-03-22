@@ -1,42 +1,66 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Col, Row } from "react-bootstrap";
 
 const Carrusel = () => {
     return (
         <Carousel>
             <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="https://via.placeholder.com/1200x500/FF5733/FFFFFF?text=Imagen+1"
-                    alt="Primera imagen"
-                />
+                <Row className="justify-content-center">
+                    <Col md={4}>
+                        <img
+                            className="d-block w-100"
+                            src="/images/ANUNCIO DE PRUEBA.png"
+                            alt="Evento 1"
+                        />
+                    </Col>
+                    <Col md={4}>
+                        <img
+                            className="d-block w-100"
+                            src="/images/ANUNCIO2.png"
+                            alt="Evento 2"
+                        />
+                    </Col>
+                    <Col md={4}>
+                        <img
+                            className="d-block w-100"
+                            src="/images/ANUNCIO3.png"
+                            alt="Evento 3"
+                        />
+                    </Col>
+                </Row>
                 <Carousel.Caption>
-                    <h3>Primera imagen</h3>
-                    <p>Texto accesible con buen contraste</p>
+                    <h3>Eventos Destacados</h3>
+                    <p>Descubre los mejores eventos de la temporada</p>
                 </Carousel.Caption>
             </Carousel.Item>
 
             <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="https://via.placeholder.com/1200x500/33FF57/000000?text=Imagen+2"
-                    alt="Segunda imagen"
-                />
+                <Row className="justify-content-center">
+                    <Col md={4}>
+                        <img
+                            className="d-block w-100"
+                            src="/images/ANUNCIO4.png"
+                            alt="Evento 4"
+                        />
+                    </Col>
+                    <Col md={4}>
+                        <img
+                            className="d-block w-100"
+                            src="/images/ANUNCIO5.png"
+                            alt="Evento 5"
+                        />
+                    </Col>
+                    <Col md={4}>
+                        <img
+                            className="d-block w-100"
+                            src="/images/ANUNCIO6.png"
+                            alt="Evento 6"
+                        />
+                    </Col>
+                </Row>
                 <Carousel.Caption>
-                    <h3>Segunda imagen</h3>
-                    <p>Otro texto con alto contraste</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="https://via.placeholder.com/1200x500/5733FF/FFFFFF?text=Imagen+3"
-                    alt="Tercera imagen"
-                />
-                <Carousel.Caption>
-                    <h3>Tercera imagen</h3>
-                    <p>Imágenes con colores perceptibles para daltónicos</p>
+                    <h3>Próximos Eventos</h3>
+                    <p>No te pierdas lo que viene</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
