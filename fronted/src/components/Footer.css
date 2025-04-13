@@ -1,7 +1,0 @@
-.social-icons a {
-    transition: transform 0.2s;
-}
-
-.social-icons a:hover {
-    transform: scale(1.2); /* Efecto de agrandar al pasar el mouse */
-}
